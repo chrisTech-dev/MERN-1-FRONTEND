@@ -13,7 +13,7 @@ export const useProductStore = create((set) => ({
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch('https://mern-1-backend-3950.onrender.com/api/products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(product), 
@@ -32,7 +32,7 @@ export const useProductStore = create((set) => ({
   },
 
   fetchProducts: async () => {
-    const res = await fetch('http://localhost:5000/api/products');
+    const res = await fetch('https://mern-1-backend-3950.onrender.com/api/products');
     const data = await res.json();
     set({products: data.data });
 
@@ -57,7 +57,7 @@ export const useProductStore = create((set) => ({
   },
 
   updateProduct: async (id, updatedProduct) => {
-    const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+    const res = await fetch(`https://mern-1-backend-3950.onrender.com/api/products/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updatedProduct),

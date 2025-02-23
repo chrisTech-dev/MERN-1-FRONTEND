@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Container } from "@mui/material";
 import { IoMoon } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
+
 import { LuSun } from "react-icons/lu";
 import { AddBox as PlusSquareIcon } from "@mui/icons-material";
 
